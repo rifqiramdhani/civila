@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>Home - Brand</title>
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,400i,700,700i,600,600i">
+    <link rel="stylesheet" href="assets/fonts/font-awesome.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Rancho">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.10.0/baguetteBox.min.css">
+    <link rel="stylesheet" href="assets/css/smoothproducts.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/xzoom.css">
+    <link rel="stylesheet" href="assets/css/Map-Clean.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-light navbar-expand-lg fixed-top bg-white clean-navbar nav-blue">
+        <div class="container"><a class="navbar-brand logo" href="#"><img src="assets/img/ciivila%202.png"></a><button data-toggle="collapse" class="navbar-toggler" data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
+            <div
+                class="collapse navbar-collapse" id="navcol-1">
+                <ul class="nav navbar-nav ml-auto">
+                    <li class="nav-item" role="presentation"><a class="nav-link" href="index.html"><i class="fa fa-home"></i></a></li>
+                    <li class="nav-item" role="presentation"><a class="nav-link" href="index.html#form-section"><i class="fa fa-search"></i></a></li>
+                </ul>
+        </div>
+        </div>
+    </nav>
+    <section id="form-section"><a class="button-back" href="index.html"><img src="assets/img/Vector.png"></a>
+        <h2 class="heading">Detail Vila</h2>
+        <div class="container list-vila">
+            <div class="row p-5">
+                <div class="col-md-6">
+                    <div class="gallery">
+                        <div class="xzoom-container">
+                            <img src="assets/img/vilapaniisan.jpg" class="xzoom" id="xzoom-default"
+                                xoriginal="assets/img/vilapaniisan.jpg">
+                        </div>
+                        <div class="xzoom-thumbs">
+                            <a href="assets/img/vilapaniisan.jpg">
+                                <img src="assets/img/vilapaniisan.jpg" class="xzoom-gallery" width="128"
+                                    height="80" xpreview="assets/img/vilapaniisan.jpg">
+                            </a>
+                            <a href="assets/img/paniisan.jpg">
+                                <img src="assets/img/paniisan.jpg" class="xzoom-gallery" width="128"
+                                    height="80" xpreview="assets/img/paniisan.jpg">
+                            </a>
+                            
+                        </div>
+                    </div>
+
+                    <div class="row maps">
+                        <div class="col-12">
+                            <h2>VILA PANIISAN</h2>
+                            <div class="map-clean map-section mb-5">
+                                <iframe allowfullscreen="" frameborder="0" src="https://www.google.com/maps/embed/v1/place?key=AIzaSyBOJ37w3VWjmycpvWeMEs3k_R67S8OnGrA&q=Villa+Paniisan&zoom=20" width="100%" height="200"></iframe>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 deskripsi">
+                    <h2>Deskripsi</h2>
+                    <div class="table-responsive table-borderless border-hitam">
+                        <table class="table">
+                            <tbody>
+                                <tr>
+                                    <td>Alamat</td>
+                                    <td>: Jl Raya Maribaya, Cibodas, Lembang, Kab. Bandung<br> Barat<br></td>
+                                </tr>
+                                <tr>
+                                    <td>Kapasitas</td>
+                                    <td>20 - 40 orang</td>
+                                </tr>
+                                <tr>
+                                    <td>Fasilitas</td>
+                                    <td>
+                                        <ul class="dashed">
+                                            <li>&nbsp;Terdiri dari 2 lantai<br></li>
+                                            <li> 3 kamar di lantai 1 dan 1 kamar di lantai 2<br></li>
+                                            <li>&nbsp;Kolam Renang</li>
+                                            <li>&nbsp;Gazebo</li>
+                                            <li>&nbsp;2 Halaman yang luas</li>
+                                            <li>&nbsp;3 kamar bilas dan 3 kamar mandi di halaman</li>
+                                            <li>&nbsp;Tembar BBQ dan tempat api unggun</li>
+                                            <li>&nbsp;Balkon</li>
+                                            <li>&nbsp;Minibar</li>
+                                            <li>&nbsp;Dapur yang luas</li>
+                                        </ul>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <div class="row button-info mt-5">
+                        <div class="col-12 text-center">
+                            <a href="" class="btn btn-submit"><i class="fa fa-whatsapp"></i>Info Pemesanan</a>
+                            <a href="" class="btn btn-submit"><i class="fa fa-ticket"></i>Kode Vocher</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.10.0/baguetteBox.min.js"></script>
+    <script src="assets/js/smoothproducts.min.js"></script>
+    <script src="assets/js/theme.js"></script>
+    <script src="assets/js/xzoom.min.js"></script>
+    <script>
+        
+        $(document).ready(function(){
+            $('.xzoom, .xzoom-gallery').xzoom({
+              zoomWidth: 200,
+              title: false,
+              tint: '#333',
+              Xoffset: 15,
+              position: "lens"
+            });
+          });
+    
+    </script>
+</body>
+
+</html>

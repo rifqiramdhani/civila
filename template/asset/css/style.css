@@ -1,0 +1,175 @@
+* {
+  font-family: 'Roboto';
+}
+
+.clean-navbar .navbar-nav .nav-item {
+  padding: 0 7px;
+}
+
+.nav .nav-item .fa {
+  font-size: 40px;
+  color: #fff;
+}
+
+.nav-blue {
+  background-color: rgba(124,204,255,0.44)!important;
+}
+
+.navbar-brand img {
+  width: 100%;
+}
+
+.clean-navbar .logo {
+  width: 132px;
+  padding: 0;
+  margin: 0;
+}
+
+.navbar {
+  padding: 13px 0px;
+}
+
+.navbar-expand-lg .navbar-nav .nav-link {
+  padding: 0 17px;
+}
+
+#top-section {
+  min-height: 100vh;
+  background-image: url("../../assets/img/bg.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.footer-copyright {
+  padding-top: 0!important;
+  margin-top: 0!important;
+}
+
+.page-footer.dark {
+  padding: 0;
+}
+
+.form-inline .form-label {
+  justify-content: left!important;
+}
+
+.border-hitam {
+  border: 2px solid #000;
+}
+
+.btn-submit {
+  background-color: #42C3AC;
+  color: #000;
+}
+
+.btn-submit:hover {
+  background-color: #42C3AC!important;
+}
+
+.heading {
+  font-family: Rancho, cursive;
+  text-align: center;
+}
+
+.card-vila {
+  text-align: center;
+  box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.35);
+  margin-right: 0%;
+  margin-bottom: 3%;
+  position: relative;
+  padding-left: 0;
+}
+
+.card-image {
+  width: 100%;
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -moz-osx-font-smoothing: grayscale;
+  position: relative;
+  background: #e1e1e1;
+  -webkit-transition-property: color;
+  transition-property: color;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+}
+
+.img-fluid {
+  width: 100%;
+}
+
+.card-desc {
+  height: 70px;
+}
+
+h5 {
+}
+
+.card-desc-title {
+  margin: 0.7em 0;
+  position: relative;
+}
+
+.card-desc-bottom .p-left {
+  float: left;
+  font-size: 1em;
+  color: #333;
+  line-height: 22px;
+  font-family: 'Roboto Condensed', sans-serif;
+  font-weight: normal;
+}
+
+.card-desc-bottom .p-right {
+  float: right;
+  font-size: 1em;
+  color: #333;
+  line-height: 22px;
+}
+
+.card-desc-bottom .fa {
+  color: #FFA800!important;
+}
+
+.card-desc-title h5 {
+  font-size: 15px;
+}
+
+.h2, h2 {
+}
+
+.deskripsi h2 {
+  text-align: center;
+  font-family: 'Roboto';
+  font-weight: bold;
+}
+
+ul {
+  margin: 0;
+}
+
+ul.dashed {
+  list-style-type: none;
+}
+
+ul.dashed > li {
+  text-indent: -5px;
+}
+
+ul.dashed > li:before {
+  content: "-";
+  text-indent: -5px;
+}
+
+.xzoom-container img{
+  width: 480px!important;
+}
+
+.maps h2 {
+    font-family: 'Roboto';
+    font-size: 22px;
+}
