@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Jan 25, 2021 at 03:33 PM
+-- Generation Time: Jan 31, 2021 at 02:11 PM
 -- Server version: 10.4.14-MariaDB
 -- PHP Version: 7.4.11
 
@@ -50,6 +50,7 @@ INSERT INTO `foto` (`id_foto`, `id_vila`, `foto`) VALUES
 
 CREATE TABLE `vila` (
   `id_vila` int(11) NOT NULL,
+  `lokasi_vila` varchar(128) NOT NULL,
   `nama_vila` varchar(50) NOT NULL,
   `harga_vila` int(11) NOT NULL,
   `alamat_vila` varchar(100) NOT NULL,
@@ -64,8 +65,8 @@ CREATE TABLE `vila` (
 -- Dumping data for table `vila`
 --
 
-INSERT INTO `vila` (`id_vila`, `nama_vila`, `harga_vila`, `alamat_vila`, `narahubung_vila`, `kapasitas_vila`, `fasilitas_vila`, `rating_vila`, `foto_vila`) VALUES
-(1, 'Vila Paniisan', 1000000, 'Jl Raya Maribaya, Cibodas, Lembang, Kab. Bandung Barat', '081363556848', '20 - 40 orang', 'Terdiri dari 2 lantai,3 kamar di lantai 1 dan 1 kamar di lantai 2,3 kamar mandi (2 kamar mandi tersedia air panas),Kolam renang,Gazebo,2 halaman yang luas,3 kamar bilas dan 3 kamar mandi di halaman,Tempat BBQ dan tempat api unggun,Balkon,Minibar,Dapur yang luas', '4.1', 'vilapaniisan.jpg');
+INSERT INTO `vila` (`id_vila`, `lokasi_vila`, `nama_vila`, `harga_vila`, `alamat_vila`, `narahubung_vila`, `kapasitas_vila`, `fasilitas_vila`, `rating_vila`, `foto_vila`) VALUES
+(1, 'Ciwidey', 'Vila Paniisan', 1000000, 'Jl Raya Maribaya, Cibodas, Lembang, Kab. Bandung Barat', '081363556848', '20 - 40 orang', 'Terdiri dari 2 lantai,3 kamar di lantai 1 dan 1 kamar di lantai 2,3 kamar mandi (2 kamar mandi tersedia air panas),Kolam renang,Gazebo,2 halaman yang luas,3 kamar bilas dan 3 kamar mandi di halaman,Tempat BBQ dan tempat api unggun,Balkon,Minibar,Dapur yang luas', '4.1', 'vilapaniisan.jpg');
 
 --
 -- Indexes for dumped tables
