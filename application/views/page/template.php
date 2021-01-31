@@ -102,7 +102,10 @@
             });
 
             $('#sharefacebook').click(function() {
-                $('.selamat').show()
+
+                setInterval(() => {
+                    $('.selamat').show()
+                }, 3000);
             })
 
             $('#checkin').datepicker({

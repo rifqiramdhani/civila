@@ -13,7 +13,19 @@ class Page extends CI_Controller
     }
 
     public function daftarvila(){
-        $data['datavila'] = $this->My_model->getdata('vila')->result();
+        // $data['datavila'] = $this->My_model->getdata('vila')->result();
+
+        $lokasi = $this->input->get('lokasi');
+        $checkin = $this->input->get('checkin');
+        $checkout = $this->input->get('checkout');
+        $kapasitas = $this->input->get('kapasitas');
+
+        $query = 'SELECT * FROM `vila` WHERE lokasi_vila = "'. $lokasi .'" AND kapasitas_vila = "'. $kapasitas .'" ORDER BY harga_vila ASC';
+
+        $data['datavila'] = $this->db->query($query)->result();
+        $data['checkin'] = $checkin;
+        $data['checkout'] = $checkout;
+
         $this->template->load('page/template', 'page/daftarvila', $data);
     }
 
@@ -25,6 +37,10 @@ class Page extends CI_Controller
 
 
         $data['fasilitas_vila'] = explode(',', $data['detail_vila']['fasilitas_vila']);
+
+        $data['checkin'] = $this->input->get('checkin');
+        $data['checkout'] = $this->input->get('checkout');
+
         $this->template->load('page/template', 'page/detailvila', $data);
     }
 }

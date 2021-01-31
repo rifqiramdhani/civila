@@ -63,7 +63,7 @@
 
                 <div class="row button-info mt-5">
                     <div class="col-12 text-center">
-                        <a href="http://api.whatsapp.com/send?phone=<?= $hp62 ?>&text=Saya%20ingin%20memesan%20vila%20paniisan%20pada%0Atanggal%2020/02/2020%20sampai%2021/02/2020" class="btn btn-submit" target="_blank"><i class="fa fa-whatsapp"></i>Info Pemesanan</a>
+                        <a href="http://api.whatsapp.com/send?phone=<?= $hp62 ?>&text=Saya%20ingin%20memesan%20vila%20paniisan%20pada%0Atanggal%20<?= $checkin ?>%20sampai%20<?= $checkout ?>" class="btn btn-submit" target="_blank"><i class="fa fa-whatsapp"></i>Info Pemesanan</a>
                         <a href="#" class="btn btn-submit" data-toggle="modal" data-target="#modalVocher"><i class="fa fa-ticket"></i>Kode Vocher</a>
 
 
@@ -79,14 +79,9 @@
 <div class="modal fade" id="modalVocher" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog">
         <div class="modal-content">
-            <div class="modal-header">
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true">&times;</span>
-                </button>
-            </div>
             <div class="modal-body">
                 <p>Silahkan Bagikan Untuk Mendapatkan Kode Vocher</p>
-                <a href="http://www.facebook.com/sharer.php?u=<?= base_url() ?>" class="btn btn-info" id="sharefacebook" onclick="window.open(this.href,'targetWindow','toolbar=no,location=no,status=no,menubar=no,scrollbars=yes,resizable=yes,width=350,height=250'); return false">
+                <a href="http://www.facebook.com/sharer.php?u=<?= base_url() ?>" class="btn btn-info" id="sharefacebook" onclick="window.open(this.href,'targetWindow','toolbar=no,location=no,status=no,menubar=no,scrollbars=yes,resizable=yes,width=500,height=350'); return false">
                     <i class="fa fa-facebook"></i>
                 </a>
 
