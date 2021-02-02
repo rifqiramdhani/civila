@@ -30,6 +30,7 @@
                         <div class="input-group mb-3 col-md-6">
                             <span class="input-group-text"><i class="fa fa-male"></i></span>
                             <select name="kapasitas" id="kapasitas" class="form-control col-10">
+                                <option value=""></option>
                                 <option value="1 - 5 orang">1 - 5 orang</option>
                                 <option value="5 - 10 orang">5 - 10 orang</option>
                                 <option value="10 - 15 orang">10 - 15 orang</option>
