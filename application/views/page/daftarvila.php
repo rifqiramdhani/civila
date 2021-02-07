@@ -12,8 +12,8 @@
             <?php foreach ($datavila as $getdata) :  ?>
                 <div class="col-md-3 card-vila">
                     <div class="card-image">
-                        <a href="<?= base_url('detail-vila/') . $getdata->id_vila .'?checkin='. $checkin .'&checkout='. $checkout ?>">
-                            <img class="img-fluid" src="<?= base_url('assets/frontend/img/') . $getdata->foto_vila ?>">
+                        <a href="<?= base_url('detail-vila/') . $getdata->id_vila .'?checkin='. $checkin .'&checkout='. $checkout .'&kapasitas=' . $kapasitas . '&lokasi='. $lokasi ?>">
+                            <img class="img-fluid" src="<?= base_url('assets/frontend/img/detail_vila/') . $getdata->foto_vila ?>">
                         </a>
                     </div>
                     <div class="card-desc">

@@ -102,7 +102,6 @@
             });
 
             $('#sharefacebook').click(function() {
-
                 setInterval(() => {
                     $('.selamat').show()
                 }, 3000);

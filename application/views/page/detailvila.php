@@ -1,5 +1,5 @@
 <section id="form-section">
-    <a class="button-back" href="<?= base_url('daftar-vila') ?>">
+    <a class="button-back" href="<?= base_url('daftar-vila?'). 'lokasi='. $lokasi .'&checkin='. $checkin .'&checkout='. $checkout .'&kapasitas='. $kapasitas ?>">
         <img src="<?= base_url('assets/frontend/img/Vector.png') ?>">
     </a>
 
@@ -81,7 +81,7 @@
         <div class="modal-content">
             <div class="modal-body">
                 <p>Silahkan Bagikan Untuk Mendapatkan Kode Vocher</p>
-                <a href="http://www.facebook.com/sharer.php?u=<?= base_url() ?>" class="btn btn-info" id="sharefacebook" onclick="window.open(this.href,'targetWindow','toolbar=no,location=no,status=no,menubar=no,scrollbars=yes,resizable=yes,width=500,height=350'); return false">
+                <a href="http://www.facebook.com/sharer.php?u=<?= base_url() ?>" class="btn btn-info" id="sharefacebook" onclick="window.open(this.href,'targetWindow','toolbar=no,location=no,status=no,menubar=no,scrollbars=yes,resizable=yes,width=1000px,height=700px'); return false">
                     <i class="fa fa-facebook"></i>
                 </a>
 

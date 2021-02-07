@@ -25,6 +25,9 @@ class Page extends CI_Controller
         $data['datavila'] = $this->db->query($query)->result();
         $data['checkin'] = $checkin;
         $data['checkout'] = $checkout;
+        $data['lokasi'] = $lokasi;
+        $data['kapasitas'] = $kapasitas;
+        
 
         $this->template->load('page/template', 'page/daftarvila', $data);
     }
@@ -38,6 +41,8 @@ class Page extends CI_Controller
 
         $data['fasilitas_vila'] = explode(',', $data['detail_vila']['fasilitas_vila']);
 
+        $data['kapasitas'] = $this->input->get('kapasitas');
+        $data['lokasi'] = $this->input->get('lokasi');
         $data['checkin'] = $this->input->get('checkin');
         $data['checkout'] = $this->input->get('checkout');
 

@@ -35,9 +35,14 @@
                                 <option value="5 - 10 orang">5 - 10 orang</option>
                                 <option value="10 - 15 orang">10 - 15 orang</option>
                                 <option value="15 - 20 orang">15 - 20 orang</option>
-                                <option value="20 - 30 orang">20 - 30 orang</option>
-                                <option value="40 - 50 orang">40 - 50 orang</option>
-                                <option value="50 - 60 orang">50 - 60 orang</option>
+                                <option value="20 - 25 orang">20 - 25 orang</option>
+                                <option value="25 - 30 orang">25 - 30 orang</option>
+                                <option value="30 - 35 orang">30 - 35 orang</option>
+                                <option value="35 - 40 orang">35 - 40 orang</option>
+                                <option value="40 - 45 orang">40 - 45 orang</option>
+                                <option value="45 - 50 orang">45 - 50 orang</option>
+                                <option value="50 - 55 orang">50 - 55 orang</option>
+                                <option value="55 - 60 orang">55 - 60 orang</option>
                             </select>
                         </div>
                     </div>
