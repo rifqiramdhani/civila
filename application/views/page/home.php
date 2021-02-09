@@ -21,7 +21,7 @@
                             <div class="col-md-6"><label class="form-label">Check out</label>
                                 <div class="input-group mb-3">
                                     <span class="input-group-text"><i class="fa fa-calendar"></i></span>
-                                    <input class="form-control" type="text" id="checkout" name="checkout" onkeypress="return false;">
+                                    <input class="form-control" type="text" id="checkout" name="checkout" onkeypress="return false;" required>
                                 </div>
                             </div>
                         </div>
@@ -29,7 +29,7 @@
                     <div class="form-group"><label class="ml-3">Kapasitas</label>
                         <div class="input-group mb-3 col-md-6">
                             <span class="input-group-text"><i class="fa fa-male"></i></span>
-                            <select name="kapasitas" id="kapasitas" class="form-control col-10">
+                            <select name="kapasitas" id="kapasitas" class="form-control col-10" required>
                                 <option value=""></option>
                                 <option value="1 - 5 orang">1 - 5 orang</option>
                                 <option value="5 - 10 orang">5 - 10 orang</option>
