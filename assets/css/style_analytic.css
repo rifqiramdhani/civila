@@ -1,0 +1,422 @@
+/*--
+Author: W3layouts
+Author URL: http://w3layouts.com
+License: Creative Commons Attribution 3.0 Unported
+License URL: http://creativecommons.org/licenses/by/3.0/
+--*/
+/*--reset--*/
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,dl,dt,dd,ol,nav ul,nav li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video{margin:0;padding:0;border:0;font-size:100%;font:inherit;vertical-align:baseline;}
+article, aside, details, figcaption, figure,footer, header, hgroup, menu, nav, section {display: block;}
+ol,ul{list-style:none;margin:0px;padding:0px;}
+blockquote,q{quotes:none;}
+blockquote:before,blockquote:after,q:before,q:after{content:'';content:none;}
+table{border-collapse:collapse;border-spacing:0;}
+/*--start editing from here--*/
+a{text-decoration:none;}
+.txt-rt{text-align:right;}/* text align right */
+.txt-lt{text-align:left;}/* text align left */
+.txt-center{text-align:center;}/* text align center */
+.float-rt{float:right;}/* float right */
+.float-lt{float:left;}/* float left */
+.clear{clear:both;}/* clear float */
+.pos-relative{position:relative;}/* Position Relative */
+.pos-absolute{position:absolute;}/* Position Absolute */
+.vertical-base{	vertical-align:baseline;}/* vertical align baseline */
+.vertical-top{	vertical-align:top;}/* vertical align top */
+nav.vertical ul li{	display:block;}/* vertical menu */
+nav.horizontal ul li{	display: inline-block;}/* horizontal menu */
+img{max-width:100%;}
+/*--end reset--*/
+body {
+    font-family: 'Open Sans', sans-serif;
+    background: #343a4e;
+    background-size: cover;
+    background-attachment: fixed;
+}
+h1 {
+    font-size: 3em;
+    text-align: center;
+    color: #fff;
+    font-weight: 100;
+}
+/*--main--*/
+.main {
+    /* padding: 2em 0 0; */
+}
+.main-row {
+    width: 100%;
+    background: #fff;
+    margin:0 auto;
+    padding: 2em;
+}
+.main-row.main-top {
+    margin: 2em auto;
+}
+/*--//main--*/
+/******** SAP ************/
+.sap_tabs{
+	clear:both;
+	font-style: normal;
+	position:relative;
+}
+.facts {
+	padding:3em 0 0;
+}
+ul.resp-tabs-list {
+	list-style: none;
+	background:none;
+	margin: 0 auto;
+}
+div#horizontalTab {
+  background:none;
+  }
+.resp-tab-item {
+    color: #343a4e;
+    font-size: 1em;
+    cursor: pointer;
+    padding: 10px 20px;
+    display: inline-block;
+    margin-left: 1em;
+    list-style: none;
+    float: left;
+    border: 2px solid #343a4e;
+    outline: none;
+    -webkit-transition: all 0.3s ease-out;
+    -moz-transition: all 0.3s ease-out;
+    -ms-transition: all 0.3s ease-out;
+    -o-transition: all 0.3s ease-out;
+    transition: all 0.3s ease-out;
+    text-transform: capitalize;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -o-border-radius: 5px;
+    -ms-border-radius: 5px;
+    font-weight: 400;
+}
+.resp-tab-item:hover {
+	text-shadow: none;
+}
+.resp-tab-active {
+    background: #fff;
+    text-shadow: none;
+    color: #1ca0de;
+    font-weight: 400;
+    border: 2px solid #1ca0de;
+}
+.resp-tabs-container {
+	padding: 0px;
+	clear: left;
+	border-top:none;
+	background:none;
+}
+h2.resp-accordion {
+	cursor: pointer;
+	padding: 5px;
+	display: none;
+}
+.resp-tab-content {
+	display: none;
+}
+.resp-content-active, .resp-accordion-active {
+   display: block;
+}
+h2.resp-accordion {
+	font-size: 1em;
+    margin: 0px;
+    padding: 10px 15px;
+    background: #fff;
+    margin:0 0 1em;
+    color: #242424;
+}
+h2.resp-accordion:hover {
+    background: rgba(113, 186, 232, 0.79);
+    text-shadow: none;
+    color: #fff;
+}
+@media only screen and (max-width:480px) {
+.sap_tabs{
+	padding-top:0;
+}
+.resp-tabs-container{
+	padding:10px;
+}
+ul.resp-tabs-list {
+  	display: none;
+}
+h2.resp-accordion {
+  	display: block;
+}
+.resp-vtabs .resp-tab-content {
+  	border: 1px solid #C1C1C1;
+}
+.resp-vtabs .resp-tabs-container {
+	border: none;
+	float: none;
+	width: 100%;
+	min-height: initial;
+	clear: none;
+}
+.resp-accordion-closed {
+	display: none !important;
+}
+}
+/******** //SAP ************/
+.tab-left {
+    float: left;
+}
+.resp-tabs-list {
+    float: right;
+}
+.tab-left h2 {
+    font-size: 2.2em;
+    color:#343A4E;
+	line-height: 1em;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 100;
+}
+canvas{
+	width:100% !important;
+}
+canvas#line,canvas#line1,canvas#line2,canvas#line3 {
+    margin-top: 2em;
+}
+.main-bottom ul li {
+    display: inline-block;
+    width: 22%;
+}
+.main-bottom ul li:nth-child(4) {
+    width: 30%;
+	text-align:right;
+}
+.main-bottom h3 {
+   font-size: 1.2em;
+    color: #1ca0de;
+}
+.main-bottom p {
+     color: #343A4E;
+    font-size: 1.7em;
+    margin-top: 0.5em;
+    font-weight: 400;
+}
+.main-bottom a {
+    font-size: 1.2em;
+    color: #343A4E;
+    font-weight:400;
+}
+.main-bottom a:hover {
+    color: #1ca0de;
+}
+span.arrow {
+    background: url(../images/arrow.png)no-repeat 0px 0px;
+    display: inline-block;
+    width: 13px;
+    height: 22px;
+    vertical-align: sub;
+    margin-left: .6em;
+}
+.main-bottom a:hover span.arrow {
+    background: url(../images/arrow1.png)no-repeat 0px 0px;
+}
+/*--copyright--*/
+.copyright {
+    margin: 2em 0;
+    text-align: center;
+}
+.copyright p {
+    font-size: 1em;
+    color: #fff;
+	line-height: 1.8em;
+}
+.copyright p a{
+    color:#1ca0de;
+}
+.copyright p a:hover {
+    color: #fff;
+	text-decoration:underline;
+}
+/*--//copyright--*/
+/*---- responsive-design -----*/
+@media(max-width:1440px){
+}
+@media(max-width:1366px){
+}
+@media(max-width:1280px){
+.main-row {
+    width: 58%;
+}
+}
+@media(max-width:1080px){
+.main-row {
+    width: 70%;
+}
+}
+@media(max-width:1024px){
+}
+@media(max-width:991px){
+.main-row {
+    width: 76%;
+}
+}
+@media(max-width:900px){
+.tab-left h2 {
+    font-size: 2em;
+}
+.resp-tab-item {
+    font-size: 0.9em;
+    padding: 8px 15px;
+}
+}
+@media(max-width:800px){
+.main-row {
+    width: 80%;
+    padding: 1.7em;
+}
+}
+@media(max-width:768px){
+h1 {
+    font-size: 2.7em;
+}
+.main-bottom p {
+    font-size: 1.6em;
+}
+}
+@media(max-width:640px){
+.resp-tab-item {
+    font-size: 0.85em;
+    padding: 7px 10px;
+    margin-left: 0.5em;
+}
+.main-row {
+    padding: 1.5em;
+}
+.tab-left h2 {
+    font-size: 1.8em;
+}
+canvas {
+	 height: 230px !important;
+}
+.main-bottom h3 {
+    font-size: 1.3em;
+}
+.main-bottom p {
+    font-size: 1.4em;
+}
+.main-bottom a {
+    font-size: 1em;
+}
+span.arrow {
+    width: 9px;
+    height: 17px;
+    margin-left: .4em;
+    background-size: 100%;
+}
+.main-bottom a:hover span.arrow {
+    background-size: 100%;
+}
+.copyright p {
+    font-size: 0.9em;
+}
+}
+@media(max-width:600px){
+.main-row {
+    width: 83%;
+}
+}
+@media(max-width:480px){
+.main {
+    padding: 1.5em 0 0;
+}
+h1 {
+    font-size: 2.5em;
+}
+.main-row {
+    padding: 1.2em;
+	width: 85%;
+}
+.main-row.main-top {
+    margin: 1em auto;
+}
+.tab-left h2 {
+    font-size: 1.7em;
+}
+h2.resp-accordion {
+    font-size: 1em;
+    padding: 7px 15px;
+}
+.resp-tabs-container {
+    padding: 0;
+    margin-top: 1em;
+}
+canvas#line, canvas#line1, canvas#line2, canvas#line3 {
+    margin-top: 0em;
+}
+canvas {
+    height: 150px !important;
+}
+.main-bottom a {
+    font-size: 0.85em;
+}
+span.arrow {
+    width: 8px;
+    height: 14px;
+}
+.main-bottom h3 {
+    font-size: 1em;
+}
+.main-bottom p {
+    font-size: 1.2em;
+}
+}
+@media(max-width:414px){
+h1 {
+    font-size: 2.3em;
+}
+h2.resp-accordion {
+    font-size: .9em;
+}
+.main-bottom ul li {
+    display: block;
+    width: 100%;
+    text-align: center;
+}
+.main-bottom ul li:nth-child(4) {
+    width: 100%;
+    text-align: center;
+    margin-top: 1em;
+}
+.main-bottom ul li:nth-child(2) {
+    margin: 1em 0;
+}
+.main-bottom p {
+    margin-top: 0;
+}
+.copyright {
+    margin: 1.5em 1em;
+    text-align: center;
+}
+}
+@media(max-width:375px){
+}
+@media(max-width:320px){
+h1 {
+    font-size: 1.8em;
+}
+.main {
+    padding: 0.5em 0 0;
+}
+.main-row {
+    padding: 0.8em;
+}
+canvas {
+    height: 125px !important;
+}
+h2.resp-accordion {
+    font-size: .8em;
+    padding: 5px 15px;
+}
+.copyright p {
+    font-size: 0.88em;
+}
+}
+/*--//responsive-design---*/

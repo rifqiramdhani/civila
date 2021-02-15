@@ -36,8 +36,7 @@
                     <h4 class="pt-3">Oops! You're lost.</h4>
                     <p class="text-muted">The page you are looking for was not found.</p>
                 </div>
-                <?php $level = strtolower($this->session->userdata('level'))  ?>
-                <a href="<?= base_url() . $level .'/page/dashboard' ?>" class="btn btn-block btn-light">Go home</a>
+                <a href="<?= base_url() .'admin/dashboard' ?>" class="btn btn-block btn-light">Go home</a>
             </div>
         </div>
     </div>

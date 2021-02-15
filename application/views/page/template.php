@@ -4,7 +4,12 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
-    <title>Home - Brand</title>
+    <title>Home - Civila</title>
+    <!-- favicon -->
+    <link rel="icon" type="image/png" sizes="16x16" href="<?= base_url('assets/img/brand/ciivila 2.png') ?>">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+    <!-- bootstrap -->
     <link rel="stylesheet" href="<?= base_url('assets/frontend/bootstrap/css/bootstrap.min.css') ?>">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,400i,700,700i,600,600i">
     <link rel="stylesheet" href="<?= base_url() ?>assets/frontend/fonts/font-awesome.min.css">
@@ -16,6 +21,7 @@
     <link rel="stylesheet" href="<?= base_url() ?>assets/frontend/css/Map-Clean.css">
     <link rel="stylesheet" href="https://unpkg.com/gijgo@1.9.13/css/gijgo.min.css">
     <link rel="stylesheet" href="<?= base_url() ?>assets/frontend/css/style.css">
+    <script src="<?= base_url() ?>assets/frontend/js/jquery.min.js"></script>
 </head>
 
 <body>
@@ -34,7 +40,7 @@
                         </a>
                     </li>
                     <li class="nav-item" role="presentation">
-                        <a class="nav-link" href="#form-section"><i class="fa fa-search"></i>
+                        <a class="nav-link" id="scrolltoform" href="#form-section"><i class="fa fa-search"></i>
                         </a>
                     </li>
                 </ul>
@@ -44,13 +50,14 @@
 
     <?= $contents ?>
 
-    <script src="<?= base_url() ?>assets/frontend/js/jquery.min.js"></script>
+
     <script src="<?= base_url() ?>assets/frontend/bootstrap/js/bootstrap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.10.0/baguetteBox.min.js"></script>
     <script src="<?= base_url() ?>assets/frontend/js/smoothproducts.min.js"></script>
     <script src="<?= base_url() ?>assets/frontend/js/theme.js"></script>
     <script src="<?= base_url() ?>assets/frontend/js/xzoom.min.js"></script>
     <script src="https://unpkg.com/gijgo@1.9.13/js/gijgo.min.js"></script>
+
     <script>
         function getDateTime() {
             const today = new Date()
@@ -91,21 +98,26 @@
     <script>
         $(document).ready(function() {
 
-
-
             $('.xzoom, .xzoom-gallery').xzoom({
-                zoomWidth: 200,
+                zoomWidth: 500,
                 title: false,
                 tint: '#333',
-                Xoffset: 15,
-                position: "lens"
+                Xoffset: 15
             });
 
             $('#sharefacebook').click(function() {
                 setInterval(() => {
                     $('.selamat').show()
                 }, 3000);
+
+                var kode_vocher = $("#kode_vocher").text()
+                $("#vocher_user").attr('value', kode_vocher)
+                $("#vocher_user").attr('readonly', kode_vocher)
+                $("#form_vocher").show()
+
             })
+
+            $("#form_vocher").hide()
 
             $('#checkin').datepicker({
                 uiLibrary: 'bootstrap4',

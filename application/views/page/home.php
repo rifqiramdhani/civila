@@ -4,10 +4,11 @@
         <div class="row">
             <div class="col-md-12 border-hitam p-5">
                 <form action="<?= base_url('daftar-vila') ?>" method="get">
-                    <div class="form-group"><label class="form-label ml-3">Lokasi</label>
+                    <div class="form-group">
+                        <label class="form-label ml-3">Lokasi</label>
                         <div class="input-group mb-3 col-md-12">
                             <span class="input-group-text"><i class="fa fa-map-marker"></i></span>
-                            <input class="form-control" type="text" name="lokasi" required>
+                            <input class="form-control" type="text" name="lokasi" placeholder="Khusus Bandung Raya" required>
                         </div>
                     </div>
                     <div class="form-group">
@@ -18,7 +19,8 @@
                                     <input class="form-control" type="text" id="checkin" name="checkin" onkeypress="return false;" required>
                                 </div>
                             </div>
-                            <div class="col-md-6"><label class="form-label">Check out</label>
+                            <div class="col-md-6">
+                                <label class="form-label">Check out</label>
                                 <div class="input-group mb-3">
                                     <span class="input-group-text"><i class="fa fa-calendar"></i></span>
                                     <input class="form-control" type="text" id="checkout" name="checkout" onkeypress="return false;" required>
@@ -26,9 +28,12 @@
                             </div>
                         </div>
                     </div>
-                    <div class="form-group"><label class="ml-3">Kapasitas</label>
+                    <div class="form-group">
+                        <label class="ml-3">Kapasitas</label>
                         <div class="input-group mb-3 col-md-6">
-                            <span class="input-group-text"><i class="fa fa-male"></i></span>
+                            <span class="input-group-text">
+                                <i class="fa fa-male"></i>
+                            </span>
                             <select name="kapasitas" id="kapasitas" class="form-control col-10" required>
                                 <option value=""></option>
                                 <option value="1 - 5 orang">1 - 5 orang</option>
@@ -46,9 +51,17 @@
                             </select>
                         </div>
                     </div>
-                    <div class="form-group"><button type="submit" class="btn ml-3 mt-5 btn-submit" role="button">Cari Akomodasi</button></div>
+                    <div class="form-group">
+                        <button type="submit" class="btn ml-3 mt-5 btn-submit" role="button">Cari Akomodasi</button>
+                    </div>
                 </form>
             </div>
         </div>
     </div>
 </section>
+
+<script>
+    $('body,html').animate({
+        scrollTop: 600
+    }, 1000);
+</script>
