@@ -12,10 +12,11 @@ class Page extends CI_Controller
     public function __construct(){
         parent::__construct();
         $this->load->model('User_model');
+        $this->visitor();
     }
 
     public function index(){
-        $this->visitor();
+        
         $this->template->load('page/template', 'page/home');
     }
 
